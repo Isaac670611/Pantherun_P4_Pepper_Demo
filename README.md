@@ -8,7 +8,11 @@ This document describes how to download and install Quartus 25.1.1 and the requi
 
 ### 1. Quartus
 
-Download the installer file:
+Download the installer file from following link:
+
+- https://www.altera.com/downloads/fpga-development-tools/quartus-prime-pro-edition-design-software-version-25-1-1-linux
+
+Download patch file for Quartus 25.1.1:
 
 - `quartus-25.1.1-1.03-linux.run`
 
@@ -24,7 +28,11 @@ Download the GCC toolchain from the following link:
 
 ### 1. Install Quartus
 
-1. Make the installer executable:
+1. Make the installer and patch executable:
+
+```bash
+chmod +x qinst-linux-25.1.1-125.run
+```
 
 ```bash
 chmod +x quartus-25.1.1-1.03-linux.run
@@ -33,7 +41,7 @@ chmod +x quartus-25.1.1-1.03-linux.run
 2. Run the installer:
 
 ```bash
-./quartus-25.1.1-1.03-linux.run
+./qinst-linux-25.1.1-125.run
 ```
 
 3. Create the installation directory:
@@ -46,6 +54,11 @@ mkdir -p /opt/pkg/altera_pro/25.1.1
 
 ```
 /opt/pkg/altera_pro/25.1.1
+```
+5. Run the patch:
+
+```bash
+./quartus-25.1.1-1.03-linux.run
 ```
 
 ---
